@@ -9,3 +9,7 @@ su www-data -s /bin/sh -c "wp core install \
   --skip-email"
 
 su www-data -s /bin/sh -c "wp plugin activate civicrm"
+
+cd /var/www/html/
+su www-data -s /bin/sh -c "cv core:install"
+su www-data -s /bin/sh -c "cv dl --dev flexmailer shoreditch mosaico"
