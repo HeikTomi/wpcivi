@@ -1,7 +1,7 @@
 #!/bin/bash
 
 su www-data -s /bin/sh -c "wp core install \
-  --url='10.174.52.21:8080' \
+  --url='192.168.1.101:8080' \
   --title='Example Site' \
   --admin_user='admin' \
   --admin_password='admin' \
