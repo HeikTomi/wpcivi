@@ -1,1 +1,1 @@
-FROM mymod/wpcivi
+FROM theikkinen/private-repo
