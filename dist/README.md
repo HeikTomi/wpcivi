@@ -1,0 +1,2 @@
+# CiviCRM Test images
+
