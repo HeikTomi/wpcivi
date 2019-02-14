@@ -1,7 +1,7 @@
-FROM theikkinen/private-repo:v1
+FROM theikkinen/private-repo:latest
 
-RUN sudo curl -LsS https://download.civicrm.org/cv/cv.phar -o /usr/local/bin/cv
-RUN sudo chmod +x /usr/local/bin/cv
+# RUN sudo curl -LsS https://download.civicrm.org/cv/cv.phar -o /usr/local/bin/cv
+# RUN sudo chmod +x /usr/local/bin/cv
 
 COPY civicrm-entrypoint.sh /usr/local/bin/
 
