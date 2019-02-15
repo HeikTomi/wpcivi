@@ -1,7 +1,12 @@
 # CiviCRM Wordpress extended image
 
-### Notice
-Change your IP into the civicrm-entrypoint.sh
+### Contains:
 
-### Use root to login into wpcivi container
-docker exec -it -u root [container_path]_wpcivi_1 bash
+* Wordpress
+* CiviCRM
+* CiviCRM Admin Utils
+* Mosaics
+* Members
+
+### Notice
+Check ENVIRONMENT variables in docker-compose -file to your setup

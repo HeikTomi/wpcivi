@@ -3,14 +3,15 @@ version: "3.3"
 services:
   wpcivi:
     image: theikkinen/private-repo:latest
-    restart: always
+    restart: on-failure
     ports:
       - 8080:80
     environment:
       WORDPRESS_DB_PASSWORD: somepassword
+      WORDPRESS_BASE_URL: localhost1:8080
 
   mysql:
     image: mysql:5.7
-    restart: always
+    restart: on-failure
     environment:
       MYSQL_ROOT_PASSWORD: somepassword

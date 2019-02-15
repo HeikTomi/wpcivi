@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Update basic info url/port if needed
+# Update basic info url/port if neededdocker c
 su www-data -s /bin/sh -c "wp core install \
-  --url='localhost:8080' \
+  --url=${WORDPRESS_BASE_URL} \
   --title='Example Site' \
   --admin_user='admin' \
   --admin_password='admin' \
@@ -24,3 +24,6 @@ su www-data -s /bin/sh -c "wp plugin activate members"
 cd /var/www/html/
 su www-data -s /bin/sh -c "cv core:install"
 su www-data -s /bin/sh -c "cv dl --dev flexmailer shoreditch mosaico"
+
+echo "Up and running in: "
+echo ${WORDPRESS_BASE_URL} 
