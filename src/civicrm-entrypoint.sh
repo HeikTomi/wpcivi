@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Update basic info url/port if neededdocker c
+# Update basic info url/port if needed
 su www-data -s /bin/sh -c "wp core install \
   --url=${WORDPRESS_BASE_URL} \
   --title='Example Site' \
