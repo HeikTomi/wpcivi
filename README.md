@@ -7,6 +7,9 @@
   * CiviCRM Admin Utils
   * Mosaics
   * Members
+  * WP CLI
+  * CV CLI
+  * Civix CLI
 
 ### Notice
 

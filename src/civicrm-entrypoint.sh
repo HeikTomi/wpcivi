@@ -24,7 +24,3 @@ su www-data -s /bin/sh -c "wp plugin activate members"
 cd /var/www/html/
 su www-data -s /bin/sh -c "cv core:install"
 su www-data -s /bin/sh -c "cv dl --dev flexmailer shoreditch mosaico"
-
-echo "Up and running in: " ${WORDPRESS_BASE_URL}
-
-echo ${WORDPRESS_ADMIN_USER} ":" ${WORDPRESS_ADMIN_PASSWORD} ":" ${WORDPRESS_ADMIN_EMAIL}

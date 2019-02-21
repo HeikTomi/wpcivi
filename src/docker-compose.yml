@@ -4,12 +4,10 @@ services:
   wpcivi:
     build: ../
     restart: always
-    volumes:
-      - ./www/html:/var/www/html
     ports:
       - 8080:80
     environment:
-      SITE_TITLE: Example site
+      SITE_TITLE: Example
       WORDPRESS_DB_PASSWORD: somepassword
       WORDPRESS_BASE_URL: 10.174.52.21:8080
       WORDPRESS_ADMIN_USER: admin
