@@ -9,9 +9,13 @@ services:
     ports:
       - 8080:80
     environment:
+      SITE_TITLE: Example site
       WORDPRESS_DB_PASSWORD: somepassword
       WORDPRESS_BASE_URL: 10.174.52.21:8080
-
+      WORDPRESS_ADMIN_USER: admin
+      WORDPRESS_ADMIN_PASSWORD: admin
+      WORDPRESS_ADMIN_EMAIL: admin@example.com
+  
   mysql:
     image: mysql:5.7
     restart: always

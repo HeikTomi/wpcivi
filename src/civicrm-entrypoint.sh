@@ -3,10 +3,10 @@
 # Update basic info url/port if needed
 su www-data -s /bin/sh -c "wp core install \
   --url=${WORDPRESS_BASE_URL} \
-  --title='Example Site' \
-  --admin_user='admin' \
-  --admin_password='admin' \
-  --admin_email='admin@example.com' \
+  --title=${SITE_TITLE} \
+  --admin_user=${WORDPRESS_ADMIN_USER} \
+  --admin_password=${WORDPRESS_ADMIN_PASSWORD} \
+  --admin_email=${WORDPRESS_ADMIN_EMAIL} \
   --skip-email"
 
 #Activate civicrm
@@ -25,5 +25,6 @@ cd /var/www/html/
 su www-data -s /bin/sh -c "cv core:install"
 su www-data -s /bin/sh -c "cv dl --dev flexmailer shoreditch mosaico"
 
-echo "Up and running in: "
-echo ${WORDPRESS_BASE_URL} 
+echo "Up and running in: " ${WORDPRESS_BASE_URL}
+
+echo ${WORDPRESS_ADMIN_USER} ":" ${WORDPRESS_ADMIN_PASSWORD} ":" ${WORDPRESS_ADMIN_EMAIL}

@@ -1,7 +1,8 @@
 FROM theikkinen/private-repo:latest
 
-# RUN sudo curl -LsS https://download.civicrm.org/cv/cv.phar -o /usr/local/bin/cv
-# RUN sudo chmod +x /usr/local/bin/cv
+## Install civix a extension building CLI for civiCMS
+RUN sudo curl -LsS https://download.civicrm.org/civix/civix.phar -o /usr/local/bin/civix
+RUN chmod +x /usr/local/bin/civix
 
 COPY ./src/civicrm-entrypoint.sh /usr/local/bin/
 
