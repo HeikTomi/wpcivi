@@ -4,6 +4,8 @@ services:
   wpcivi:
     build: ../
     restart: always
+    volumes:
+      - ./www/html:/var/www/html
     ports:
       - 8080:80
     environment:

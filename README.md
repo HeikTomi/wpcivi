@@ -10,3 +10,5 @@
 
 ### Notice
 Check ENVIRONMENT variables in docker-compose -file to your setup
+
+**Updating master branch will trigger new :latest docker image build**
