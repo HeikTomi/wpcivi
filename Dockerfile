@@ -1,6 +1,6 @@
-FROM theikkinen/private-repo:latest
+FROM theikkinen/private-repo:v1
 
-## Install civix a extension building CLI for civiCMS
+## Install civix a extension building CLI for civiCMS ## commented cause already installed in current image
 RUN sudo curl -LsS https://download.civicrm.org/civix/civix.phar -o /usr/local/bin/civix
 RUN chmod +x /usr/local/bin/civix
 

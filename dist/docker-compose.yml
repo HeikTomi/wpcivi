@@ -7,7 +7,7 @@ services:
     ports:
       - 8080:80
     environment:
-      SITE_TITLE: Example site
+      SITE_TITLE: Example
       WORDPRESS_DB_PASSWORD: somepassword
       WORDPRESS_BASE_URL: localhost:8080
       WORDPRESS_ADMIN_USER: admin
