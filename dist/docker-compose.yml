@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   wpcivi:
-    image: theikkinen/private-repo:latest
+    image: theikkinen/private-repo:1.0
     restart: on-failure
     ports:
       - 8080:80
